@@ -5,46 +5,49 @@
 
 ---
 
-## 구조
+## 폴더 구조
 
 ```
 company-docs/
-├── company_profile.json   # 회사 기본 정보 (LLM 프롬프트 주입용)
+├── company_profile.json        # 회사 기본 정보 (LLM 프롬프트 주입용)
 ├── design/
-│   └── design.md          # WISEITECH PPT 디자인 시스템 명세
-├── products/              # 주요 제품별 상세 정보 (예정)
-├── business/              # 주요 사업 영역 및 실적 (예정)
+│   └── design.md               # WISEITECH PPT 디자인 시스템 명세
+├── products/
+│   ├── README.md               # 제품 목록 인덱스
+│   ├── _양식.md                 # 새 제품 작성 양식
+│   └── (제품명).md              # 제품별 상세 문서
+├── business/
+│   ├── README.md               # 사업 영역 인덱스
+│   ├── _양식.md                 # 새 사업 영역 작성 양식
+│   └── (영역명).md              # 사업 영역별 상세 문서
 └── README.md
 ```
 
 ---
 
-## 파일별 설명
+## 문서 목록
 
-### `company_profile.json`
-LLM 제안서·PPT 생성 시 자동으로 프롬프트에 주입되는 회사 기본 정보입니다.  
-제품명, 사업 영역, 수행 실적, 보유 인증 등을 포함합니다.  
-실제 정보로 업데이트해서 사용하세요.
+### 📋 회사 기본 정보
+| 파일 | 설명 |
+|------|------|
+| [company_profile.json](./company_profile.json) | LLM 프롬프트 주입용 회사 기본 정보 (제품·실적·인증 요약) |
 
-### `design/design.md`
-WISEITECH PPT 디자인 시스템 명세 문서입니다.  
-색상 팔레트, 타이포그래피, 컴포넌트 스타일, 레이아웃 원칙 등을 정의합니다.  
-`ppt_claude_design.py` 코드와 동기화되어 있습니다.
+### 🎨 디자인 시스템
+| 파일 | 설명 |
+|------|------|
+| [design/design.md](./design/design.md) | WISEITECH PPT 색상·타이포·컴포넌트·레이아웃 명세 |
 
-### `products/` (예정)
-주요 제품별 상세 문서를 관리합니다.
+### 📦 제품 정보
+| 파일 | 설명 |
+|------|------|
+| [products/README.md](./products/README.md) | 제품 목록 인덱스 |
+| [products/_양식.md](./products/_양식.md) | 새 제품 문서 작성 양식 |
 
-- 제품 개요 및 주요 기능
-- 기술 스택 및 아키텍처
-- 도입 사례 및 레퍼런스
-- 보유 인증
-
-### `business/` (예정)
-주요 사업 영역과 수행 실적을 관리합니다.
-
-- 사업 영역별 역량 기술
-- 연도별 수행 실적
-- 협력사 및 파트너십
+### 🏢 주요 사업 영역
+| 파일 | 설명 |
+|------|------|
+| [business/README.md](./business/README.md) | 사업 영역 목록 인덱스 |
+| [business/_양식.md](./business/_양식.md) | 새 사업 영역 문서 작성 양식 |
 
 ---
 
@@ -65,6 +68,9 @@ PPT·제안서 생성 프롬프트 상단에 자동 주입합니다.
 
 ## 업데이트 가이드
 
-1. 제품·사업 정보가 바뀌면 `company_profile.json` 수정 후 커밋
-2. 디자인 시스템이 바뀌면 `design/design.md`와 `ppt_claude_design.py` 함께 수정
-3. 세부 문서는 `products/`, `business/` 폴더에 Markdown으로 추가
+| 상황 | 수정 대상 |
+|------|-----------|
+| 제품·실적·인증 변경 | `company_profile.json` + 해당 `products/(제품명).md` |
+| 새 제품 추가 | `products/_양식.md` 복사 → `products/(제품명).md` 작성 → `products/README.md` 목록 추가 |
+| 새 사업 영역 추가 | `business/_양식.md` 복사 → `business/(영역명).md` 작성 → `business/README.md` 목록 추가 |
+| PPT 디자인 변경 | `design/design.md` + `ml-server/ppt_claude_design.py` 함께 수정 |
