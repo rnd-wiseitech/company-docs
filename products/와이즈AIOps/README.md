@@ -20,7 +20,7 @@
 이런 모델이 만들어지면 모델 서빙도구가 원격서버, 온프라미스서버등에 배포할 수 있으며 API로 운영도 가능하다. 
 이렇게 모델이나 데이터 수집은 파이프라인 도구가 워크플로우를 GUI를 통해 쉽게 구성할  수 있고 구성된 워크플로우는 실행환경관리도구가 사용자에게 환경을 부여해주며 잡들을 실행하게 된다. 실행되는 잡은 플랫폼 자원관리도구가 클라우드나, 온프라미스 서버의 자원을 잡에게 할당하고 관리한다.
 
-![제품 시스템 구성도](./images/와이즈AIOps/WiseAIOps-system-structure.png)
+![제품 시스템 구성도](./images/WiseAIOps-system-structure.png)
 
 
 ### 1.2 제품 메뉴 구성도
@@ -48,20 +48,20 @@
 - **데이터셋 확인**: 데이터셋 클릭 시 통계량 및 마우스 드래그를 통해 데이터를 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![데이터셋 관리 화면 — 등록된 데이터셋 목록과 통계 정보](./images/와이즈AIOps/data-manager-dataset.png)
+![데이터셋 관리 화면 — 등록된 데이터셋 목록과 통계 정보](./images/data-manager-dataset.png)
 
 #### 연결 관리
 - **연결 추가**: 외부 저장소를 등록하여 활용할 수 있도록 하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![연결 관리 화면 — 외부 저장소 등록](./images/와이즈AIOps/data-manager-connection.png)
+![연결 관리 화면 — 외부 저장소 등록](./images/data-manager-connection.png)
 
 #### 하이브쿼리
 - **테이블 및 컬럼 확인**: 왼쪽 사이드 트리 구조에서 테이블 목록 및 테이블의 컬럼을 확인하는 기능
 - **쿼리 실행**: SELECT 쿼리를 실행하고 데이터를 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![하이브쿼리 화면 — 테이블 트리와 SELECT 쿼리 실행 결과](./images/와이즈AIOps/data-manager-hive-query.png)
+![하이브쿼리 화면 — 테이블 트리와 SELECT 쿼리 실행 결과](./images/data-manager-hive-query.png)
 
 #### 스토리지 뷰어
 - **폴더 생성**: AIOps 기본 파일저장소에 폴더를 생성하는 기능
@@ -70,7 +70,7 @@
 - **파일 기능**: 선택한 파일에 대한 이름변경/이동/복사/삭제 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![스토리지 뷰어 화면 — 폴더·파일 트리 및 관리](./images/와이즈AIOps/data-manager-storage-viewer.png)
+![스토리지 뷰어 화면 — 폴더·파일 트리 및 관리](./images/data-manager-storage-viewer.png)
 
 #### 스케줄 관리
 - **스케줄 등록**: 생성한 워크플로우를 스케줄에 등록하여 자동으로 실행할 수 있도록 하는 기능
@@ -81,8 +81,8 @@
 - **스케줄 삭제**: 등록한 스케줄을 삭제하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![스케줄 관리 화면 — 워크플로우 스케줄 등록 확인](./images/와이즈AIOps/data-manager-schedule.png)
-![스케줄 관리 화면 — 워크플로우 스케줄 로그 확인](./images/와이즈AIOps/data-manager-schedule-log.png)
+![스케줄 관리 화면 — 워크플로우 스케줄 등록 확인](./images/data-manager-schedule.png)
+![스케줄 관리 화면 — 워크플로우 스케줄 로그 확인](./images/data-manager-schedule-log.png)
 
 ### 2.2 Workflow
 
@@ -98,7 +98,7 @@
   - 지원 대상: 데이터베이스 · 데이터셋(AIOps 관리 데이터셋)
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![정형 데이터 워크플로우 — 입력·변환·출력 컴퍼넌트 연결](./images/와이즈AIOps/workflow-structured-data.png)
+![정형 데이터 워크플로우 — 입력·변환·출력 컴퍼넌트 연결](./images/workflow-structured-data.png)
 
 #### 비정형 데이터
 - **이미지 입력 컴퍼넌트**: 컴퍼넌트를 통해 이미지 데이터를 불러오는 기능
@@ -109,7 +109,7 @@
   - 지원 대상: 데이터셋(AIOps 관리 데이터셋)
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![비정형(이미지) 데이터 워크플로우 — 이미지 입력·라벨링·출력](./images/와이즈AIOps/workflow-unstructured-data.png)
+![비정형(이미지) 데이터 워크플로우 — 이미지 입력·라벨링·출력](./images/workflow-unstructured-data.png)
 
 #### 모델
 - **분류 모델**: 컴퍼넌트를 통해 정형 데이터에 대해 분류 모델을 학습·저장하는 기능
@@ -129,7 +129,7 @@
   - 세부: 모델 예측 · 모델 배포
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![모델 컴퍼넌트 — 분류·회귀·군집·언어·이미지 모델 학습](./images/와이즈AIOps/workflow-model.png)
+![모델 컴퍼넌트 — 분류·회귀·군집·언어·이미지 모델 학습](./images/workflow-model.png)
 
 #### 공통
 - **워크플로우 제작**: 컴퍼넌트를 드래그하고 연결하여 워크플로우를 만드는 기능
@@ -139,7 +139,7 @@
 - **데이터 스키마**: 컴퍼넌트별로 데이터 스키마가 어떻게 변화하는지 Before/Current로 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![워크플로우 제작 화면 — 드래그·연결 저코드 캔버스](./images/와이즈AIOps/workflow-canvas.png)
+![워크플로우 제작 화면 — 드래그·연결 저코드 캔버스](./images/workflow-canvas.png)
 
 ### 2.3 Monitoring
 
@@ -150,7 +150,7 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **프로세스 관리**: 모든 프로세스에 대해 실시간 정보 확인 및 Kill(강제 종료) 관리 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![모니터링 화면 — 실시간 자원 사용량(CPU·Memory·GPU) 라인차트](./images/와이즈AIOps/monitoring-process.png)
+![모니터링 화면 — 실시간 자원 사용량(CPU·Memory·GPU) 라인차트](./images/monitoring-process.png)
 
 ### 2.4 Resource
 
@@ -166,7 +166,7 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **클러스터 실시간 모니터링**: 트리에서 클러스터·노드를 우클릭하여 실시간 노드/파드 가동률·디스크 사용률·CPU/Memory/GPU 사용률을 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![클러스터 관리 화면 — 쿠버네티스 구성 트리와 실시간 모니터링](./images/와이즈AIOps/resource-cluster.png)
+![클러스터 관리 화면 — 쿠버네티스 구성 트리와 실시간 모니터링](./images/resource-cluster.png)
 
 #### 플랫폼 관리
 - **AIOps 플랫폼 구성도**: AIOps 전체 플랫폼의 구성도와 상태를 확인하는 기능
@@ -176,7 +176,7 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **Pod 삭제**: Pod를 삭제하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![플랫폼 관리 화면 — AIOps 플랫폼 구성도와 모델 배포 Pod](./images/와이즈AIOps/resource-platform.png)
+![플랫폼 관리 화면 — AIOps 플랫폼 구성도와 모델 배포 Pod](./images/resource-platform.png)
 
 ### 2.5 User Manager
 
@@ -192,13 +192,13 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **사용자 삭제**: 트리에서 사용자를 선택하여 삭제하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![사용자 관리 화면 — 그룹/사용자 트리 구성](./images/와이즈AIOps/user-manager-user.png)
+![사용자 관리 화면 — 그룹/사용자 트리 구성](./images/user-manager-user.png)
 
 #### 사용자 접속이력
 - **접속이력 확인**: 사용자들의 로그인/접속/로그아웃을 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![사용자 접속이력 화면 — 로그인/접속/로그아웃 이력](./images/와이즈AIOps/user-manager-access-log.png)
+![사용자 접속이력 화면 — 로그인/접속/로그아웃 이력](./images/user-manager-access-log.png)
 
 ### 2.6 Model Manager
 
@@ -213,7 +213,7 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **모델 이력 확인**: 버전별 파라미터/성능 비교, 특정 버전 모델 정보, 모델이 만들어진 워크플로우 정보를 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![모델 이력 화면 — 모델 목록과 상세정보(평가지표·예측차트)](./images/와이즈AIOps/model-manager-history.png)
+![모델 이력 화면 — 모델 목록과 상세정보(평가지표·예측차트)](./images/model-manager-history.png)
 
 #### 커스텀 모델 관리
 - **커스텀 모델 추가**: 사용자가 AIOps가 아닌 외부에서 만든 파이토치(PyTorch) 모델을 등록하는 기능
@@ -222,8 +222,8 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **커스텀 모델 상세정보**: 커스텀 모델의 가중치 파라미터, 레이어 등 상세 정보를 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![커스텀 모델 관리 화면 — 외부 PyTorch 모델 등록·상세정보](./images/와이즈AIOps/model-manager-custom-model.png)
-![커스텀 모델 관리 화면 — 외부 PyTorch 모델 등록·상세정보](./images/와이즈AIOps/model-manager-custom-model-coding.png)
+![커스텀 모델 관리 화면 — 외부 PyTorch 모델 등록·상세정보](./images/model-manager-custom-model.png)
+![커스텀 모델 관리 화면 — 외부 PyTorch 모델 등록·상세정보](./images/model-manager-custom-model-coding.png)
 
 #### 프롬프트 관리
 - **프롬프트 추가**: 새로운 프롬프트를 추가하는 기능
@@ -232,7 +232,7 @@ AIOps에서 실행되는 모든 프로세스를 실시간으로 관리하는 모
 - **프롬프트 상세정보**: 특정 프롬프트의 상세 정보를 확인하는 기능
 
 <!-- 📷 캡쳐 예정 — 아래 경로에 실제 png 저장 시 자동 표시됨 -->
-![프롬프트 관리 화면 — 프롬프트 목록·상세정보](./images/와이즈AIOps/model-manager-prompt.png)
+![프롬프트 관리 화면 — 프롬프트 목록·상세정보](./images/model-manager-prompt.png)
 
 ### 2.7 지능형 운영 — 드리프트 감지 및 자동 재학습
 

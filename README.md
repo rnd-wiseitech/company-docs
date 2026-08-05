@@ -13,16 +13,14 @@ company-docs/
 ├── design/
 │   ├── README.md               # 디자인 시스템 요약
 │   └── design.md               # WISEITECH PPT 디자인 시스템 상세 명세
-├── products/
+├── products/                   # 제품 하나당 폴더 하나 (KB 화면과 1:1)
 │   ├── README.md               # 제품 목록 인덱스
-│   ├── _양식.md                 # 새 제품 작성 양식
-│   ├── 와이즈AIOps.md
-│   ├── 와이즈프로펫.md
-│   ├── 와이즈인텔리전스.md      # 생성형 보고서 포함
-│   ├── 와이즈DQ.md
-│   ├── 와이즈메타.md
-│   ├── ASTA.md
-│   └── 코드인슈어.md
+│   ├── 작성가이드.md            # 제품 담당자용 작성 가이드
+│   ├── _양식/                   # 새 제품 폴더 양식 (통째로 복사)
+│   └── <제품명 한글>/
+│       ├── README.md           # 제품 설명·기능 계층
+│       ├── slides.md           # 제안 슬라이드 인덱스 (요구사항 ↔ 대응 문장 ↔ 원본 위치)
+│       └── images/             # 제품 화면 캡쳐 png
 ├── business/
 │   ├── README.md               # 사업 영역 인덱스
 │   ├── _양식.md                 # 새 사업 영역 작성 양식
@@ -53,13 +51,14 @@ company-docs/
 | 파일 | 설명 |
 |------|------|
 | [products/README.md](./products/README.md) | 제품 목록 인덱스 |
-| [products/와이즈AIOps.md](./products/와이즈AIOps.md) | 엔드투엔드 AI 개발·운영 플랫폼 |
-| [products/와이즈프로펫.md](./products/와이즈프로펫.md) | 저코드 AI 개발 플랫폼 |
-| [products/와이즈인텔리전스.md](./products/와이즈인텔리전스.md) | BI·시각화·**생성형 보고서** |
-| [products/와이즈DQ.md](./products/와이즈DQ.md) | AI 기반 데이터 품질 관리 |
-| [products/와이즈메타.md](./products/와이즈메타.md) | 메타데이터 관리·표준화 |
-| [products/ASTA.md](./products/ASTA.md) | 시스템 영향도 분석 |
-| [products/코드인슈어.md](./products/코드인슈어.md) | 소스코드 보안 취약점 분석 |
+| [products/작성가이드.md](./products/작성가이드.md) | **제품 담당자용 작성 가이드** (새 제품 추가·보강 시 필독) |
+| [products/와이즈AIOps/](./products/와이즈AIOps/) | 엔드투엔드 AI 개발·운영 플랫폼 (작성 기준 예시) |
+| [products/와이즈프로펫/](./products/와이즈프로펫/) | 저코드 AI 개발 플랫폼 |
+| [products/와이즈인텔리전스/](./products/와이즈인텔리전스/) | BI·시각화·**생성형 보고서** |
+| [products/와이즈DQ/](./products/와이즈DQ/) | AI 기반 데이터 품질 관리 |
+| [products/와이즈메타/](./products/와이즈메타/) | 메타데이터 관리·표준화 |
+| [products/ASTA/](./products/ASTA/) | 시스템 영향도 분석 |
+| [products/코드인슈어/](./products/코드인슈어/) | 소스코드 보안 취약점 분석 |
 
 ### 🏢 주요 사업 영역
 | 파일 | 설명 |
@@ -101,8 +100,8 @@ PPT·제안서 생성 프롬프트 상단에 자동 주입합니다.
 
 | 상황 | 수정 대상 |
 |------|-----------|
-| 제품·실적·인증 변경 | `company_profile.json` + 해당 `products/(제품명).md` |
-| 새 제품 추가 | `products/_양식.md` 복사 → 작성 → `products/README.md` 목록 추가 |
+| 제품·실적·인증 변경 | `company_profile.json` + 해당 `products/(제품명)/README.md` |
+| 새 제품 추가 | `products/_양식/` 폴더 복사 → 작성 → `products/README.md` 목록 추가 ([작성가이드](./products/작성가이드.md)) |
 | 새 사업 영역 추가 | `business/_양식.md` 복사 → 작성 → `business/README.md` 목록 추가 |
 | 데이터버틀러 AI 기능 추가 | `databutler/` 에 새 파일 추가 → `databutler/README.md` 업데이트 |
 | PPT 디자인 변경 | `design/design.md` + `ml-server/ppt_claude_design.py` 함께 수정 |
