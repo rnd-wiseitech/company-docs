@@ -20,8 +20,8 @@
     },
     {
       "name": "Data Management",
-      "description": "데이터 품질·메타데이터·시스템 영향도·소프트웨어 보안을 통합 관리하는 데이터 관리 솔루션 사업",
-      "products": ["WiseDQ", "WiseMeta", "ASTA", "Code Insure"]
+      "description": "데이터 품질·메타데이터를 통합 관리하는 데이터 관리 솔루션 사업",
+      "products": ["WiseDQ", "WiseMeta"]
     }
   ],
 
@@ -104,33 +104,6 @@
       ],
       "certifications": [],
       "target_clients": ["공공기관", "대기업"]
-    },
-    {
-      "name": "ASTA",
-      "name_ko": "ASTA",
-      "category": "시스템 영향도 분석 솔루션",
-      "description": "시스템 영향도를 사전에 분석하여 시스템 장애를 예방하고 변경 리스크를 최소화하는 IT 시스템 변경 관리 솔루션",
-      "key_features": [
-        "변경 영향 범위 자동 분석",
-        "소스코드·쿼리 변경 이력 관리",
-        "시스템 연관 구조 시각화"
-      ],
-      "certifications": [],
-      "target_clients": ["IT 기관", "금융"]
-    },
-    {
-      "name": "Code Insure",
-      "name_ko": "코드인슈어",
-      "category": "소스코드 보안 취약점 분석 솔루션",
-      "description": "소스코드 보안 취약점을 사전에 점검·분석하여 소프트웨어 보안성과 안정성을 확보하는 정적 분석(SAST) 기반 보안 솔루션",
-      "key_features": [
-        "소스코드 정적 분석 기반 취약점 자동 탐지",
-        "CWE·OWASP 기준 취약점 분류",
-        "취약점별 개선 가이드 제공",
-        "CI/CD 파이프라인 보안 점검 통합"
-      ],
-      "certifications": [],
-      "target_clients": ["공공기관", "SW 개발사"]
     }
   ],
 

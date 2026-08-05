@@ -10,7 +10,7 @@
 | 파일 | 사업 영역 | 주요 제품 | 주요 고객 |
 |------|-----------|-----------|-----------|
 | [AI데이터플랫폼.md](./AI데이터플랫폼.md) | Tailored AX — AI 혁신 플랫폼 | WiseAIOps, WiseProphet, WiseIntelligence | 공공기관, 금융, 유통 |
-| [데이터관리.md](./데이터관리.md) | Data Management — 데이터 관리 | WiseDQ, WiseMeta, ASTA, Code Insure | 공공기관, 금융, 대기업 |
+| [데이터관리.md](./데이터관리.md) | Data Management — 데이터 관리 | WiseDQ, WiseMeta | 공공기관, 금융, 대기업 |
 | [_양식.md](./_양식.md) | 새 사업 영역 작성 양식 | — | — |
 
 ---
@@ -26,10 +26,10 @@
 │
 └── Data Management (데이터 관리)
     ├── WiseDQ         — AI 기반 데이터 품질 관리
-    ├── WiseMeta       — 메타데이터 관리·표준화
-    ├── ASTA           — 시스템 영향도 분석
-    └── Code Insure    — 소스코드 보안 취약점 분석
+    └── WiseMeta       — 메타데이터 관리·표준화
 ```
+
+> ℹ️ ASTA · Code Insure 는 이 저장소의 관리 대상이 아닙니다 (2026-08 제외).
 
 ---
 
